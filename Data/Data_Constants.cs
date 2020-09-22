@@ -8,8 +8,24 @@ namespace RMC.Data {
 	// Server class. 
 	class Data_Constants {
 
+		#region ENUMS
+		[Flags]
+		public enum Permissions : int {
+			kick      /**/ = 1 << 0,
+			ban       /**/ = 1 << 1,
+			spawn     /**/ = 1 << 2,
+			teleport  /**/ = 1 << 3,
+			warn      /**/ = 1 << 4,
+			givemoney /**/ = 1 << 5,
+			givepp    /**/ = 1 << 6,
+			heal	  /**/ = 1 << 7,
+		}
+		#endregion
+
 		#region SERVER
 		public const string SERVER_VERSION = "0.0.1B";
+
+		public static Dictionary<string, Permissions> GlobalPermissions = new Dictionary<string, Permissions>();
 		#endregion
 
 		#region JOB_CONSTANTS

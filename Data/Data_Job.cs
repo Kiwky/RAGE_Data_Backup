@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RMC.Data {
+﻿namespace RMC.Data {
 
 	// Server class. 
 	public class Data_Job {

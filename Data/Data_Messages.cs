@@ -1,26 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RMC.Data {
+﻿namespace RMC.Data {
 
 	// Server class. 
 	class Data_Messages {
 
-		// =======================================================================================================
+		// ======================= General =======================
 		public const string TARGET_NOT_EXIST = "Jucatorul nu exista.";
+		// ======================= General =======================
 
-		// =======================================================================================================
+		// ======================= Permissions =======================
 		public const string NO_PERMISSION = "Nu ai acces.";
+		// ======================= Permissions =======================
 
 		// ======================= Admin Commands =======================
 		public const string CMD_KICK = "kick";
 		public const string CMD_KICK_DESC = "Foloseste : /kick [nume] [motiv]";
-		public const string PLAYER_KICKED = "{1} a primit kick de la {0}. Motiv: {2}";
+		public const string PLAYER_KICKED = "{1} a primit kick de la {0}. Motiv: {2}.";
 
 		public const string CMD_BAN = "ban";
 		public const string CMD_BAN_DESC = "Foloseste : /ban [nume] [timp (minute)] [motiv]";
-		public const string PLAYER_BANED = "{1} a fost banat de {0} [Timp: {2}]. Motiv: {3}";
+		public const string PLAYER_BANED = "{1} a fost banat de {0} [Timp: {2}]. Motiv: {3}.";
 
 		public const string CMD_SPAWNCAR = "car";
 		public const string CMD_SPAWNCAR_DESC = "Foloseste : /car [masina]";
@@ -34,6 +32,35 @@ namespace RMC.Data {
 		public const string CMD_GOTO = "goto";
 		public const string CMD_GOTO_DESC = "Foloseste : /goto [name]";
 		public const string PLAYER_GOTOED = "Ai fost teleportat.";
+
+		public const string CMD_WARN = "warn";
+		public const string CMD_WARN_DESC = "Foloseste : /warn [nume] [motiv]";
+		public const string PLAYER_WARNED = "{0} a primit warn de la {1}. Motiv: {2}.";
+
+		// De facut comanda.
+		public const string CMD_GIVEMONEY = "givemoney";
+		public const string CMD_GIVEMONEY_DESC = "Foloseste : /givemoney [nume] [suma]";
+		public const string MONEY_GIVED = "{0} ti-a dat {1} bani.";
+
+		// De facut comanda.
+		public const string CMD_GIVEPP = "givepp";
+		public const string CMD_GIVEPP_DESC = "Foloseste : /givepp [nume] [suma]";
+		public const string PP_GIVED = "{0} ti-a dat {1} premium points.";
+
+		// De facut comanda.
+		public const string CMD_TAKEMONEY = "takemoney";
+		public const string CMD_TAKEMONEY_DESC = "Foloseste : /takemoney [nume] [suma]";
+		public const string MONEY_TAKED = "{0} ti-a luat {1} bani.";
+
+		// De facut comanda.
+		public const string CMD_TAKEPP = "takepp";
+		public const string CMD_TAKEPP_DESC = "Foloseste : /takepp [nume] [suma]";
+		public const string PP_TAKED = "{0} ti-a luat {1} premium points.";
+
+		// De facut comanda.
+		public const string CMD_HEAL = "heal"; 
+		public const string CMD_HEAL_DESC = "Foloseste : /heal [nume]";
+		public const string PLAYER_HEALED = "{0} a primit heal de la {1}.";
 		// ======================= Admin Commands =======================
 
 		// ======================= Login & Register =======================
