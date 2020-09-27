@@ -4,14 +4,19 @@
 	class Data_Messages {
 
 		// ======================= General =======================
+		#region GENERAL
 		public const string TARGET_NOT_EXIST = "Jucatorul nu exista.";
+		#endregion
 		// ======================= General =======================
 
 		// ======================= Permissions =======================
+		#region PERMISSIONS
 		public const string NO_PERMISSION = "Nu ai acces.";
+		#endregion
 		// ======================= Permissions =======================
 
 		// ======================= Admin Commands =======================
+		#region ADMIN_COMMANDS
 		public const string CMD_KICK = "kick";
 		public const string CMD_KICK_DESC = "Foloseste : /kick [nume] [motiv]";
 		public const string PLAYER_KICKED = "{1} a primit kick de la {0}. Motiv: {2}.";
@@ -45,7 +50,7 @@
 		// De facut comanda.
 		public const string CMD_GIVEPP = "givepp";
 		public const string CMD_GIVEPP_DESC = "Foloseste : /givepp [nume] [suma]";
-		public const string PP_GIVED = "{0} ti-a dat {1} premium points.";
+		public const string PP_GIVED = "{0} ti-a dat {1} puncte premium.";
 
 		// De facut comanda.
 		public const string CMD_TAKEMONEY = "takemoney";
@@ -55,21 +60,43 @@
 		// De facut comanda.
 		public const string CMD_TAKEPP = "takepp";
 		public const string CMD_TAKEPP_DESC = "Foloseste : /takepp [nume] [suma]";
-		public const string PP_TAKED = "{0} ti-a luat {1} premium points.";
+		public const string PP_TAKED = "{0} ti-a luat {1} puncte premium.";
 
 		// De facut comanda.
-		public const string CMD_HEAL = "heal"; 
+		public const string CMD_HEAL = "heal";
 		public const string CMD_HEAL_DESC = "Foloseste : /heal [nume]";
 		public const string PLAYER_HEALED = "{0} a primit heal de la {1}.";
+		#endregion
 		// ======================= Admin Commands =======================
 
+		// ======================= Job Info =======================
+		#region JOB_INFORMATIONS
+		public const string JOB_INFO_JOB_SELECTED = "Ai ales jobul : {0}.";
+		public const string JOB_INFO_JOB_FINISHED = "Ai castigat {0}$ pentru finalizarea jobului.";
+		public const string JOB_INFO_JOB_ABANDONED = "Ai renuntat la job.";
+
+		public const string JOB_INFO_GARBAGE_COLLECTED = "Gunoiul a fost colectat.";
+		#endregion
+		// ======================= Job Info =======================
+
+		// ======================= Descriptions =======================
+		#region DESCRIPTIONS
+		public const string DESC_UNEMPLOYED = "Descriere ENEMPLOYED.";
+		public const string DESC_TRUCKER = "Descriere TRUCKER.";
+		public const string DESC_GARBAGE = "Descriere GARBAGE.";
+		#endregion
+		// ======================= Descriptions =======================
+
+
 		// ======================= Login & Register =======================
+		#region LOGIN_REGISTER
 		public const string YOU_ARE_BANNED = "Contul este banat pentru {0} {1}";
 		public const string YOU_ARE_PERMA_BANNED = "Contul este banat PERMANENT";
 		public const string SUCCESSFULLY_LOGIN = "Te-ai conectat cu succes";
 		public const string SUCCESSFULLY_CREATED = "Contul a fost creat cu succes";
 		public const string ACCOUNT_NOT_EXIST = "Contul nu exista";
 		public const string USERNAME_USED = "Numele de utilizator este folosit";
+		#endregion
 		// ======================= Login & Register =======================
 
 	}

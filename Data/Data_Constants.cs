@@ -18,7 +18,7 @@ namespace RMC.Data {
 			warn      /**/ = 1 << 4,
 			givemoney /**/ = 1 << 5,
 			givepp    /**/ = 1 << 6,
-			heal	  /**/ = 1 << 7,
+			heal      /**/ = 1 << 7,
 		}
 		#endregion
 
@@ -31,16 +31,26 @@ namespace RMC.Data {
 		#region JOB_CONSTANTS
 		public enum JOB_ID : int {
 			NONE = 0,
-			TRUCKER = 1,
+			TRUCKER,
+			GARBAGE
 		}
 
 		public static List<Data_Job> Job_List = new List<Data_Job>() {
-			new Data_Job("Unemployed", (int)JOB_ID.NONE, 0),
-			new Data_Job("Trucker", (int)JOB_ID.TRUCKER, 0),
+			new Data_Job("Unemployed", (int)JOB_ID.NONE, 0, Data_Messages.DESC_UNEMPLOYED),
+			new Data_Job("Trucker", (int)JOB_ID.TRUCKER, 0, Data_Messages.DESC_TRUCKER),
+			new Data_Job("Garbage", (int)JOB_ID.GARBAGE, 0, Data_Messages.DESC_GARBAGE),
 		};
 
 		public static Vector3 TRUCKER_POS = new Vector3(733.18f, -1270.01f, 26.0f);
-		public static Vector3 TRUCKER_POS_GOTO = new Vector3(728.18f, -1264.01f, 26.0f);
+		#endregion
+
+		#region MARKERS
+		public static List<Data_Marker> Marker_List = new List<Data_Marker>() {
+			new Data_Marker("Trucker", new Vector3(728.18f, -1264.01f, 26.0f)),
+		};
+		#endregion
+
+		#region VEHICLES
 		#endregion
 
 		#region TIME_CONSTANTS
