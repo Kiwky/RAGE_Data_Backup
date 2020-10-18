@@ -1,0 +1,16 @@
+{
+	"Start_Bank" : 100,
+	"Start_Money" : 200,
+	"Start_Admin" : 0,
+	"Start_Premium_Points" : 0,
+
+	"Permissions": {
+		"Fondator" : "kick, ban, teleport, spawn, warn",
+		"Owner" : "kick",
+		"Administrator" : "kick",
+		"Trusted" : "kick",
+		"Moderator" : "kick",
+		"Helper" : "kick",
+		"Trial-Helper" : "kick",
+	}
+}
