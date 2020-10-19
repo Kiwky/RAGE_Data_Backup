@@ -6,19 +6,32 @@ using System.Text;
 namespace RMC.Data {
 
 	// Server class. 
-	class Data_Constants {
+	public class Data_Constants {
 
 		#region ENUMS
 		[Flags]
 		public enum Permissions : int {
-			kick      /**/ = 1 << 0,
-			ban       /**/ = 1 << 1,
-			spawn     /**/ = 1 << 2,
-			teleport  /**/ = 1 << 3,
-			warn      /**/ = 1 << 4,
-			givemoney /**/ = 1 << 5,
-			givepp    /**/ = 1 << 6,
-			heal      /**/ = 1 << 7,
+			kick        /**/ = 1 << 0,
+			ban         /**/ = 1 << 1,
+			spawn       /**/ = 1 << 2,
+			teleport    /**/ = 1 << 3,
+			warn        /**/ = 1 << 4,
+			givemoney   /**/ = 1 << 5,
+			givepp      /**/ = 1 << 6,
+			heal        /**/ = 1 << 7,
+		}
+
+		public enum Item_Type : int {
+			ITEM_NONE,          // 0
+			ITEM_FOOD,          // 1
+			ITEM_NUMERABLE,		// 2
+			ITEM_CAP,			// 3
+			ITEM_GLASSES,		// 4
+			ITEM_TSHIRT,		// 5
+			ITEM_JACKET,		// 6
+			ITEM_CLOCK,			// 7
+			ITEM_PANTS,			// 8
+			ITEM_SNEAKERS,		// 9
 		}
 		#endregion
 
@@ -26,6 +39,7 @@ namespace RMC.Data {
 		public const string SERVER_VERSION = "0.0.1B";
 
 		public static Dictionary<string, Permissions> GlobalPermissions = new Dictionary<string, Permissions>();
+		public static Dictionary<string, Data_ServerItem> GlobalItems = new Dictionary<string, Data_ServerItem>();
 		#endregion
 
 		#region JOB_CONSTANTS
